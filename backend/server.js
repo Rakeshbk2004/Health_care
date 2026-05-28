@@ -19,6 +19,8 @@ const io = new Server(server, {
       "http://localhost:5173",
       "http://localhost:5174",
       "http://localhost:3000",
+      "https://health-care-cvow.vercel.app",
+      "https://health-care-1c8u.vercel.app",
     ],
     methods: ["GET", "POST", "PATCH"],
     credentials: true,
@@ -33,6 +35,8 @@ app.use(
       "http://localhost:5173",
       "http://localhost:5174",
       "http://localhost:3000",
+      "https://health-care-cvow.vercel.app",
+      "https://health-care-1c8u.vercel.app",
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
@@ -56,7 +60,7 @@ app.use("/api/reports", require("./routes/reportRoutes"));
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/superadmin", require("./routes/superAdminAuth"));
 app.use("/api/chats", require("./routes/chatRoutes"));
-app.use("/api/lab-results", require("./routes/labResultRoutes")); // ✅ ADD THIS LINE
+app.use("/api/lab-results", require("./routes/labResultRoutes"));
 
 // ── Socket.io events ──────────────────────────
 io.on("connection", (socket) => {
