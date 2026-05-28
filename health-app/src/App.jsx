@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Layout from "./app/Layout";
 import AppRoutes from "./app/routes";
-import ChatBubble from "./features/chat/chatbubble";
+import ChatBubble from "./features/chat/ChatBubble";
 
 export default function App() {
   const [bookings, setBookings] = useState([]);
