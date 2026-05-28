@@ -1,0 +1,349 @@
+/* ===== CONTAINER ===== */
+.rep-container {
+  padding: 28px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.rep-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.rep-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text, #1a1a2e);
+  margin: 0 0 4px 0;
+}
+
+.rep-header p {
+  font-size: 14px;
+  color: var(--text-sub, #6b7280);
+  margin: 0;
+}
+
+/* ===== ADD BUTTON ===== */
+.rep-add-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.rep-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
+}
+
+/* ===== FORM ===== */
+.rep-form {
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f0f0;
+}
+
+.rep-form h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text, #1a1a2e);
+  margin: 0 0 20px 0;
+}
+
+/* ===== FIELDS ===== */
+.rep-field {
+  margin-bottom: 16px;
+}
+
+.rep-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text, #444);
+  margin-bottom: 8px;
+}
+
+.rep-field input,
+.rep-field select,
+.rep-field textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border 0.2s;
+  color: var(--text, #1a1a2e);
+  background: var(--card-bg, #fff);
+}
+
+.rep-field input:focus,
+.rep-field select:focus,
+.rep-field textarea:focus {
+  border-color: #4f46e5;
+}
+
+/* ===== FILE UPLOAD ===== */
+.rep-file-box {
+  border: 2px dashed #c7d2fe;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  background: #eef2ff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.rep-file-box:hover {
+  border-color: #4f46e5;
+  background: #e0e7ff;
+}
+
+.rep-file-label {
+  font-size: 14px;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== MESSAGES ===== */
+.rep-msg {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+.rep-msg--success {
+  background: #e6ffed;
+  color: #38a169;
+}
+
+.rep-msg--error {
+  background: #fff0f0;
+  color: #e53e3e;
+}
+
+/* ===== SAVE BUTTON ===== */
+.rep-save-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.rep-save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
+}
+
+.rep-save-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ===== LIST ===== */
+.rep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===== CARD ===== */
+.rep-card {
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s;
+}
+
+.rep-card:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== LEFT ===== */
+.rep-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.rep-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.rep-info h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text, #1a1a2e);
+  margin: 0 0 3px 0;
+}
+
+.rep-category {
+  font-size: 12px;
+  color: #4f46e5;
+  font-weight: 600;
+  margin: 0 0 3px 0;
+}
+
+.rep-desc {
+  font-size: 12px;
+  color: var(--text-sub, #6b7280);
+  margin: 0 0 3px 0;
+}
+
+.rep-date {
+  font-size: 12px;
+  color: var(--text-sub, #6b7280);
+  margin: 0;
+}
+
+/* ===== RIGHT ===== */
+.rep-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.rep-view-btn {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.rep-view-btn:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+.rep-delete-btn {
+  background: none;
+  border: 1.5px solid #e53e3e;
+  color: #e53e3e;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.rep-delete-btn:hover {
+  background: #e53e3e;
+  color: white;
+}
+
+/* ===== EMPTY ===== */
+.rep-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--card-bg, #fff);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.rep-empty-icon {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.rep-empty h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text, #1a1a2e);
+  margin: 0 0 8px 0;
+}
+
+.rep-empty p {
+  font-size: 14px;
+  color: var(--text-sub, #6b7280);
+  margin: 0;
+}
+
+/* ===== LOADING ===== */
+.rep-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  color: #888;
+  gap: 16px;
+}
+
+.rep-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f0f0f0;
+  border-top: 4px solid #4f46e5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .rep-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .rep-right {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .rep-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
