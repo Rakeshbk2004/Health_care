@@ -17,13 +17,11 @@ const medicineOrderSchema = new mongoose.Schema(
       default: "prescription_upload",
     },
 
-    // ── Selected hospital (optional — null = home delivery only) ──
     hospitalId: { type: String, default: "" },
     hospitalName: { type: String, default: "" },
     hospitalLocation: { type: String, default: "" },
     hospitalDistrict: { type: String, default: "" },
 
-    // Cart-based items
     items: [
       {
         medicineId: { type: String },
@@ -38,7 +36,6 @@ const medicineOrderSchema = new mongoose.Schema(
     totalAmount: { type: Number, default: 0 },
     deliveryCharge: { type: Number, default: 49 },
 
-    // ── Payment Fields ────────────────────────
     paymentStatus: {
       type: String,
       enum: ["pending", "paid", "failed"],
@@ -53,7 +50,6 @@ const medicineOrderSchema = new mongoose.Schema(
     razorpayOrderId: { type: String, default: null },
     paidAt: { type: Date, default: null },
 
-    // Uploaded file paths
     prescriptionUrl: { type: String, default: "" },
     tabletImageUrl: { type: String, default: "" },
 
