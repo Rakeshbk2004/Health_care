@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "../../features/Home";
-import Dashboard from "../../features/dashboard";
+import Dashboard from "../../features/Dashboard";
 import Hospitals from "../../features/hospital";
 import Tests from "../../features/tests";
 import Doctors from "../../features/doctors";
