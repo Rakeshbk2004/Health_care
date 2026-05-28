@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "./index.css";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://health-care-0irv.onrender.com/api";
 
 const STATUS_CONFIG = {
   Pending: { icon: "⏳", label: "Pending" },

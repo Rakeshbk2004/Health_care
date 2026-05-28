@@ -546,7 +546,7 @@ export default function LabTests() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/lab-bookings",
+        "https://health-care-0irv.onrender.com/api/bookings/lab-tests",
         {
           labId: selectedLab.id,
           labName: selectedLab.name,

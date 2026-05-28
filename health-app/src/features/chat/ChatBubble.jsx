@@ -2,7 +2,7 @@
 // Usage: <ChatBubble patientEmail={user.email} patientName={user.name} />
 import { useState, useEffect, useRef } from "react";
 
-const API = "http://localhost:5000/api";
+const API = "https://health-care-0irv.onrender.com/api"; // ✅ Update to deployed API
 
 export default function ChatBubble({ patientEmail, patientName }) {
   const [open, setOpen] = useState(false);

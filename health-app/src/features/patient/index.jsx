@@ -30,7 +30,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/user/profile", {
+        const res = await axios.get("", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setProfile(res.data);
@@ -73,7 +73,7 @@ const Profile = () => {
       setSaving(true);
       setMessage(null);
       const res = await axios.put(
-        "http://localhost:5000/api/user/profile",
+        "https://health-care-0irv.onrender.com/api/user/profile",
         form,
         { headers: { Authorization: `Bearer ${token}` } },
       );

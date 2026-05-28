@@ -3,7 +3,7 @@ import { useState, useRef, useMemo, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://health-care-0irv.onrender.com/api"; // ✅ Update to deployed API
 
 function toTitleCase(str) {
   if (!str) return "Other";

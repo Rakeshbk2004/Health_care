@@ -52,7 +52,7 @@ const Dashboard = () => {
 
   const fetchStats = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/bookings", {
+      const res = await axios.get("https://health-care-0irv.onrender.com/api/bookings", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const bookings = res.data;

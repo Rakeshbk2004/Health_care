@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./index.css";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://health-care-0irv.onrender.com/api"; // ✅ Update to deployed API
 
 const STATUS_META = {
   Pending: {
