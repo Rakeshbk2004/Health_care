@@ -1,7 +1,7 @@
 // backend/routes/chatRoutes.js
 const express = require("express");
 const router = express.Router();
-const Chat = require("../models/Chat");
+const Chat = require("../models/chat");
 const jwt = require("jsonwebtoken");
 
 const SECRET = process.env.JWT_SECRET || "secret";
