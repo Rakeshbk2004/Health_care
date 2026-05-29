@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./index.css";
 
-const API = "https://health-care-0irv.onrender.com/api"; // ✅ Update to deployed API
+const API = "https://https://health-care-10-hgbr.onrender.com/api"; // ✅ Update to deployed API
 
 const getToken = () =>
   localStorage.getItem("token") ||

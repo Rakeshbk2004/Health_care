@@ -20,7 +20,7 @@ const Login = () => {
     try {
       setLoading(true);
 
-      const res = await axios.post("https://health-care-0irv.onrender.com/api/auth/login", {
+      const res = await axios.post("https://https://health-care-10-hgbr.onrender.com/api/auth/login", {
         email,
         password,
       });

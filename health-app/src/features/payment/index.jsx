@@ -45,7 +45,7 @@ const Payment = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "https://health-care-0irv.onrender.com/api/payments",
+        "https://https://health-care-10-hgbr.onrender.com/api/payments",
         {
           name: state.name,
           price: state.price,
