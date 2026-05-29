@@ -4,7 +4,7 @@ import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./index.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://health-care-0irv.onrender.com/api"; // ✅ Update to deployed API
 
 const SPECIALIZATIONS = [
   "All Specializations",

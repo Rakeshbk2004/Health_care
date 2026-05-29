@@ -5,7 +5,7 @@ const router = express.Router();
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
-const MedicineOrder = require("../models/MedicineOrder"); // ✅ keep this
+const MedicineOrder = require("../models/medicineOrder");
 const auth = require("../middleware/auth");
 
 // ── Create upload folders immediately on startup ──────
