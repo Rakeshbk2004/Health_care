@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./index.css";
 
-const API = import.meta.env.VITE_API_URL || "https://https://health-care-10-hgbr.onrender.com/api"; // ✅ Use env variable with fallback
+const API = import.meta.env.VITE_API_URL || "https://health-care-10-hgbr.onrender.com/api"; // ✅ Use env variable with fallback
 
 export default function LabResults() {
   const [results, setResults] = useState([]);
