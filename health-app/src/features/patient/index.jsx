@@ -73,7 +73,7 @@ const Profile = () => {
       setSaving(true);
       setMessage(null);
       const res = await axios.put(
-        "https://https://health-care-10-hgbr.onrender.com/api/user/profile",
+        "https://health-care-10-hgbr.onrender.com/api/user/profile",
         form,
         { headers: { Authorization: `Bearer ${token}` } },
       );

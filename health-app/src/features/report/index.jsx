@@ -29,7 +29,7 @@ const Reports = () => {
   const fetchReports = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("https://https://health-care-10-hgbr.onrender.com/api/reports", {
+      const res = await axios.get("https://health-care-10-hgbr.onrender.com/api/reports", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setReports(res.data);
